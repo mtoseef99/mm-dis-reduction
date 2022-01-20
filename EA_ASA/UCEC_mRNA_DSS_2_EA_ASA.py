@@ -81,11 +81,11 @@ def run_cv(cancer_type, feature_type, target, years=3):
         df_tl = run_supervised_transfer_cv(seed, dataset, **parametrs_transfer_learning)
         
         # the AUROC scores for all 5 schemes  
-        final_score = pd.concat([df_mixture, df_white['White_ind'], df_asian['Native_ind'], df_tl['TL_Auc']],
+        final_scores = pd.concat([df_mixture, df_white['White_ind'], df_asian['Native_ind'], df_tl['TL_Auc']],
                         sort=False, axis=1)
 
-        print(final_score)
-        final_results = res.append(final_score)
+        print(final_scores)
+        final_results = res.append(final_scores)
         
     # change the path to working directory
     f_name = '/path_to_your_dir/Results/' + cancer_type + \
