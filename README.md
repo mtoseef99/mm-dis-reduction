@@ -120,9 +120,9 @@ such as:
 
 3.  EA --\> ASA
 
-To run the model with different features combinations (as in Supplementary Table
-1) and with multiethnic data distributions (as in Table 1), please change the
-experiment settings in main method of experiments files in EA_ASA and EA_NAT
+To run the model with different features combinations (as in Supplementary
+Table.1) and with multiethnic data distributions (as in Table 1), please change
+the experiment settings in main method of experiments files in EA_ASA and EA_NAT
 folders.
 
  
